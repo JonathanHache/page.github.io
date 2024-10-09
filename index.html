@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la Página</title>
+    <title>Animación de Cuadrado</title>
     <style>
         body {
-            background-color: red;
+            background-color: #f0f0f0; /* Fondo claro para contrastar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0; /* Eliminar márgenes por defecto */
         }
+        
+        .cuadrado {
+            width: 100px; /* Ancho del cuadrado */
+            height: 100px; /* Alto del cuadrado */
+            background-color: red; /* Color del cuadrado */
+            position: relative; /* Necesario para la animación */
+            animation: mover 2s linear infinite; /* Aplicar la animación */
+        }
+        
+        @keyframes mover {
+            0% {
+                transform: translateX(0); /* Posición inicial */
+            }
+            100% {
+                transform: translateX(300px); /* Mover 300px a la derecha */
+            }
+        }
+        
     </style>
 </head>
 <body>
-    <p>hola soy jonathan</p>
-    <footer>
-        <p>Derechos de autor © 2024</p>
-    </footer>
+    <div class="cuadrado"></div>
 </body>
 </html>
+
