@@ -3,15 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otra Vista</title>
+    <title>Gender</title>
+
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título */
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Párrafo */
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Botón de regreso */
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Bienvenido a la Otra Vista</h1>
-<p>Esta es la segunda vista. Si ves este mensaje, la navegación entre vistas funciona correctamente.</p>
-
-<!-- Botón para regresar a la vista principal -->
-<a href="index.html" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #28a745; text-decoration: none; border-radius: 5px;">Back</a>
+<div class="container">
+    <h1>Gender</h1>
+    <p>Drama, melodramatic films, romance, teen movies</p>
+    <!-- Botón para regresar a la vista principal -->
+    <a href="index.html" class="back-button">Back</a>
+</div>
 
 </body>
 </html>
+
