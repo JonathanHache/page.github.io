@@ -1,33 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violet and Finch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h6>Violet and Finch </h6>
-    <div class="sea">
-        <div class="circle-wrapper">
-            <div class="bubble"></div>
-            <div class="submarine-wrapper">
-                <div class="submarine-body">
-                    <div class="window"></div>
-                    <div class="engine"></div>
-                    <div class="light"></div>
-                </div>
-                <div class="helix"></div>
-                <div class="hat">
-                  <div class="leds-wrapper">
-                      <div class="periscope"></div>
-                      <div class="leds"></div>
-                  </div>
-                </div>
-            </div>
+<div class="container">
+    <h1>Violet and Finch</h1>
+
+    <div class="buttons">
+        <button onclick="showSection('gender')">Gender</button>
+        <button onclick="showSection('main-character')">Main character</button>
+        <button onclick="showSection('director')">Film director</button>
+        <button onclick="showSection('script')">Script</button>
+        <button onclick="showSection('synopsis')">Synopsis</button>
+        <button onclick="showSection('drama-description')">Description of the drama</button>
+        <button onclick="showSection('watch-reason')">Why did I decide to watch the film?</button>
+        <button onclick="showSection('scene-reason')">Why did you choose that scene?</button>
+    </div>
+
+    <div class="content">
+        <div id="gender" class="section">
+            <h2>Gender</h2>
+            <p>Drama, melodramatic films, romance, teen movies</p>
+        </div>
+        <div id="main-character" class="section">
+            <h2>Main Character</h2>
+            <p>Violet Markey and Theodore Finch</p>
+        </div>
+        <div id="director" class="section">
+            <h2>Film Director</h2>
+            <p>Brett Haley</p>
+        </div>
+        <div id="script" class="section">
+            <h2>Script</h2>
+            <p>Jennifer Niven and Liz Hannah</p>
+        </div>
+        <div id="synopsis" class="section">
+            <h2>Synopsis</h2>
+            <p>Live life to the fullest. Violet and Theodore are two friends whose meeting changes their lives forever. As they struggle to let go of the scars of their past, they discover that even the most insignificant moments can have crucial importance in their lives.</p>
+        </div>
+        <div id="drama-description" class="section">
+            <h2>Description of the Drama</h2>
+            <p>The film tells us about two young people who are in a vulnerable moment, especially Violet, whose sister had recently died in a car accident. Finch finds her at the edge of a bridge and saves her, then teaches her how to live differently. Though Finch himself was silently suffering, he helped Violet emerge stronger, even if he couldn’t return after disappearing for the last time.</p>
+        </div>
+        <div id="watch-reason" class="section">
+            <h2>Why did I decide to watch the film?</h2>
+            <p>I decided to watch the movie because I was going through a tough time emotionally. The trailer caught my attention, and I found that it teaches many lessons about how people around us may suffer in silence without us realizing it.</p>
+        </div>
+        <div id="scene-reason" class="section">
+            <h2>Why did you choose that scene?</h2>
+            <p>This scene left a big impression on me. It shows that everyone has internal battles, but some people come into our lives to help us, even if they are struggling themselves. They teach us to live, even if they can’t always stay.</p>
         </div>
     </div>
-    <a href="newIndex.html" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #28a745; text-decoration: none; border-radius: 5px;">Gender</a>
-    <img src="violet.jpg">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
 
